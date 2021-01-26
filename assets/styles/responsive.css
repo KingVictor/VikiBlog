@@ -1,0 +1,72 @@
+@media screen and (min-width: 720px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        margin: 2rem;
+        transition: transform .5s;
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+        .card:nth-child(1){
+            animation: fadeIn .5s .5s backwards;
+        }
+        .card:nth-child(2){
+            animation: fadeIn .5s 1s backwards;
+        }
+        .card:nth-child(3){
+            animation: fadeIn .5s 1.5s backwards;
+        }
+        .card:nth-child(4){
+            animation: fadeIn .5s 2s backwards;
+        }
+.card:hover{
+    transform: scale(1.05);
+}
+}
+@media screen and (max-width: 767px){
+    .header{
+      display: block;
+      width: 100%;
+    
+      padding-left: 10%;
+      font-size: 1rem;
+    }
+    .socials{
+        display: none;
+    }
+}
+@media screen and (max-width: 710px){
+    .posts .post-content > .post-info{
+        display: none;
+    }
+}
+@media screen and (max-width: 425px){
+    #suscribe .container .row  .input > input[type="email"]{
+        width: 200px;
+        padding: 5px;
+        height: 2.2rem;  
+    }
+    #suscribe .container .row  .input > input[type="button"]{
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 299px){
+    *{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px){
+   .more{
+        display: none;
+    }
+}
