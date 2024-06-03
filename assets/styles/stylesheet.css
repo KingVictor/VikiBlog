@@ -1,8 +1,9 @@
 *{
     font-family: 'Livvic', sans-serif;
-    Overflow-x: hidden;
 }
-
+body{
+     Overflow-x: hidden;
+}
 #preloader {
     position: fixed;
     top: 0;
